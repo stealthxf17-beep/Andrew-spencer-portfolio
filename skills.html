@@ -3,41 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills - Andrew Spencer</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 40px; text-align: center; }
-    .skills { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
-    .skill-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 250px; }
-  </style>
+  <title>Andrew Spencer | Skills & Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Andrew Spencer</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-    </nav>
-  </header>
-  <section>
-    <h2>Skills & Expertise</h2>
-    <div class="skills">
-      <div class="skill-card">
-        <h3>Program Management</h3>
-        <p>Over 100+ projects successfully delivered with a focus on timelines and budgets.</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Andrew Spencer</h1>
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-400">Home</a>
+        <a href="projects.html" class="hover:text-yellow-400">Projects</a>
+        <a href="skills.html" class="hover:text-yellow-400">Skills & Contact</a>
       </div>
-      <div class="skill-card">
-        <h3>Technical Tools</h3>
-        <p>MS Project, Power BI, RAID, RCA, Excel, and custom reporting solutions.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Leadership</h3>
-        <p>Cross-functional collaboration, team building, and change management expertise.</p>
+    </div>
+  </nav>
+
+  <!-- Skills & Contact -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills & Contact</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Skills -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Technical Skills</h3>
+          <ul class="list-disc ml-6">
+            <li>Program & Portfolio Management</li>
+            <li>MS Excel, MS Project, MS Office</li>
+            <li>Risk Management (RAID, RCA)</li>
+            <li>Power BI Reporting</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-3">Leadership Skills</h3>
+          <ul class="list-disc ml-6">
+            <li>Strategic Planning</li>
+            <li>Cross-functional Collaboration</li>
+            <li>Stakeholder Engagement</li>
+            <li>Change Management</li>
+            <li>Process Improvement</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Education</h3>
+          <p>Bachelor of Business Administration (Project Management focus)<br>
+          <span class="italic">Anticipated Graduation: 2026</span></p>
+
+          <h3 class="text-xl font-semibold mt-6 mb-3">Contact</h3>
+          <p>📧 <a href="mailto:Andrew_spencer@gmail.com" class="text-blue-600 underline">Andrew_spencer@gmail.com</a></p>
+          <p>📞 (808) 555-5555</p>
+          <p>📍 Wailuku, HI</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Andrew Spencer | ePortfolio</p>
+  </footer>
+
 </body>
 </html>
