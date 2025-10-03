@@ -3,42 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrew Spencer | Home</title>
+  <title>Andrew Spencer | ePortfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-gray-900 text-white p-4">
+  <nav class="bg-gray-900 text-white p-4 fixed w-full top-0 z-10 shadow-lg">
     <div class="max-w-5xl mx-auto flex justify-between items-center">
       <h1 class="text-xl font-bold">Andrew Spencer</h1>
       <div class="space-x-6">
-        <a href="index.html" class="hover:text-yellow-400">Home</a>
-        <a href="projects.html" class="hover:text-yellow-400">Projects</a>
-        <a href="skills.html" class="hover:text-yellow-400">Skills & Contact</a>
+        <a href="#home" class="hover:text-yellow-400">Home</a>
+        <a href="#projects" class="hover:text-yellow-400">Projects</a>
+        <a href="#skills" class="hover:text-yellow-400">Skills & Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Home -->
-  <section class="max-w-5xl mx-auto py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="text-lg mb-6">
-      Results-driven Program Manager with over 10 years of experience in program and project 
-      management, team leadership, and operational improvement. Proven track record of overseeing 
-      100+ projects valued at $2M, delivering 90% on time and within budget. Skilled in risk management, 
-      stakeholder communication, and process improvement. Currently pursuing a Bachelor’s in Business 
-      with a focus on Project Management (anticipated graduation 2026).
-    </p>
-    <div class="flex justify-center gap-6 mt-6">
-      <span class="bg-yellow-200 px-4 py-2 rounded-xl">100+ Projects</span>
-      <span class="bg-yellow-200 px-4 py-2 rounded-xl">$2M Portfolio</span>
-      <span class="bg-yellow-200 px-4 py-2 rounded-xl">90% On-Time Delivery</span>
+  <!-- Home Page -->
+  <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+    <div class="text-center max-w-3xl">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-lg mb-8 leading-relaxed">
+        Results-driven Program Manager with over 10 years of experience in program and project 
+        management, team leadership, and operational improvement. Proven track record of overseeing 
+        100+ projects valued at $2M, delivering 90% on time and within budget. Skilled in risk management, 
+        stakeholder communication, and process improvement. Currently pursuing a Bachelor’s in Business 
+        with a focus on Project Management (anticipated graduation 2026).
+      </p>
+      <div class="flex justify-center gap-6 mt-6 flex-wrap">
+        <span class="bg-yellow-200 px-4 py-2 rounded-xl">100+ Projects</span>
+        <span class="bg-yellow-200 px-4 py-2 rounded-xl">$2M Portfolio</span>
+        <span class="bg-yellow-200 px-4 py-2 rounded-xl">90% On-Time Delivery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Page -->
+  <section id="projects" class="min-h-screen flex items-center px-6 bg-white pt-20">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-10 text-center">Projects & Experience</h2>
+      
+      <div class="space-y-10">
+        <div>
+          <h3 class="text-xl font-semibold">Program Manager | ABC Company (2019–Present)</h3>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Directed 100+ projects valued at $2M; 90% delivered on time and on budget.</li>
+            <li>Spearheaded change management for billing system initiative.</li>
+            <li>Developed executive Power BI dashboards for leadership reporting.</li>
+            <li>Led enterprise-wide software implementation.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Project Manager | ABC Company (2017–2019)</h3>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Reduced operational costs by 25% through process improvements.</li>
+            <li>Delivered 20+ proprietary camera software implementations.</li>
+            <li>Earned “Above and Beyond” Award (2018).</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Registration Services Manager | ABC Company (2012–2017)</h3>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Directed team of 8 during service transition between islands.</li>
+            <li>Cut workflow turnaround from 5 days to 1 business day.</li>
+            <li>Enhanced customer experience with validation process redesign.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Earlier Roles</h3>
+          <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Technical Support Supervisor (2010–2012): Led 12-member team, built morale programs, managed high-volume support center.</li>
+            <li>Technical Support Representative (2005–2010): Exceeded call metrics, mentored hires, earned multiple awards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Contact -->
+  <section id="skills" class="min-h-screen flex items-center px-6 bg-gray-100 pt-20">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-10 text-center">Skills & Contact</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Skills -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Technical Skills</h3>
+          <ul class="list-disc ml-6 space-y-1">
+            <li>Program & Portfolio Management</li>
+            <li>MS Excel, MS Project, MS Office</li>
+            <li>Risk Management (RAID, RCA)</li>
+            <li>Power BI Reporting</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-3">Leadership Skills</h3>
+          <ul class="list-disc ml-6 space-y-1">
+            <li>Strategic Planning</li>
+            <li>Cross-functional Collaboration</li>
+            <li>Stakeholder Engagement</li>
+            <li>Change Management</li>
+            <li>Process Improvement</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Education</h3>
+          <p>Bachelor of Business Administration (Project Management focus)<br>
+          <span class="italic">Anticipated Graduation: 2026</span></p>
+
+          <h3 class="text-xl font-semibold mt-6 mb-3">Contact</h3>
+          <p>📧 <a href="mailto:Andrew_spencer@gmail.com" class="text-blue-600 underline">Andrew_spencer@gmail.com</a></p>
+          <p>📞 (808) 555-5555</p>
+          <p>📍 Wailuku, HI</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-4 mt-10">
+  <footer class="bg-gray-900 text-white text-center py-4">
     <p>&copy; 2025 Andrew Spencer | ePortfolio</p>
   </footer>
 
